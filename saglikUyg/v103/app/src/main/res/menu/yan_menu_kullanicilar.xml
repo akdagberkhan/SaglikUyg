@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_gonderilerimKullanici"
+            android:icon="@drawable/gonderilerim"
+            android:title="Gönderilerim" />
+        <item
+            android:id="@+id/nav_iletisimKullanici"
+            android:icon="@drawable/ic_iletisimnav"
+            android:title="İletişim" />
+        <item
+            android:id="@+id/nav_saglikKullanici"
+            android:icon="@drawable/saglik"
+            android:title="Sağlık" />
+        <item
+            android:id="@+id/nav_sporKullanici"
+            android:icon="@drawable/spor"
+            android:title="Spor" />
+    </group>
+    <item android:title="Hesap">
+        <menu>
+            <item
+                android:id="@+id/nav_profilKullanici"
+                android:icon="@drawable/profil"
+                android:title="Profil" />
+
+            <item
+                android:id="@+id/nav_cikisKullanici"
+                android:icon="@drawable/cikis"
+                android:title="Çıkış" />
+        </menu>
+    </item>
+</menu>

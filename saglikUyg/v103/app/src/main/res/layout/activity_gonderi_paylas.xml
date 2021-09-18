@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GonderiPaylasActivity">
+
+    <ImageView
+        android:id="@+id/imgGonderiPaylas"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fotosec" />
+
+    <Button
+        android:id="@+id/btnGonderiPaylasImgSec"
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/ozel3"
+        android:text="Seçiniz..."
+        app:icon="@drawable/ic_fotosec"
+        app:layout_constraintStart_toEndOf="@+id/imgGonderiPaylas"
+        app:layout_constraintTop_toTopOf="@+id/imgGonderiPaylas" />
+
+    <EditText
+        android:id="@+id/edtGonderiPaylasBaslik"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/edtGonderiPaylasAciklama"
+        android:layout_width="360dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Başlık"
+        app:layout_constraintStart_toStartOf="@+id/imgGonderiPaylas"
+        app:layout_constraintTop_toBottomOf="@+id/imgGonderiPaylas" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Kategori"
+        app:layout_constraintStart_toStartOf="@+id/edtGonderiPaylasAciklama"
+        app:layout_constraintTop_toBottomOf="@+id/edtGonderiPaylasAciklama" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Açıklama"
+        app:layout_constraintStart_toStartOf="@+id/edtGonderiPaylasBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/edtGonderiPaylasBaslik" />
+
+    <Spinner
+        android:id="@+id/spnrGonderiPaylasKategoriler"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/btnGonderiPaylas"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="GÖNDER"
+        android:backgroundTint="@color/ozel1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrGonderiPaylasKategoriler" />
+</androidx.constraintlayout.widget.ConstraintLayout>

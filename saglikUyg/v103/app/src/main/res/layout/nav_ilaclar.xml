@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtIlacAd"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKullanim"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtIlacAd"
+        app:layout_constraintTop_toBottomOf="@+id/txtIlacAd" />
+
+    <TextView
+        android:id="@+id/txtKullanimAralik"
+        android:layout_width="235dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtKullanim"
+        app:layout_constraintTop_toBottomOf="@+id/txtIlacAd" />
+
+    <TextView
+        android:id="@+id/txtBaslangicTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/txtKullanim"
+        app:layout_constraintTop_toBottomOf="@+id/txtKullanim" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBaslangicTarih"
+       android:background="@color/black" />
+</androidx.constraintlayout.widget.ConstraintLayout>

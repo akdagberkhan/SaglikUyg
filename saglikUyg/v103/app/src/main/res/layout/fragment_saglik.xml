@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SaglikFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConsSaglik1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/ozel4">
+
+        <EditText
+            android:id="@+id/edtSaglikBuyukT"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel2"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <EditText
+            android:id="@+id/edtSaglikKalpA"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel2"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <EditText
+            android:id="@+id/edtSaglikKucukT"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel2"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="mmHg"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edtSaglikBuyukT"
+            app:layout_constraintStart_toEndOf="@+id/edtSaglikBuyukT" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Dk."
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edtSaglikKalpA"
+            app:layout_constraintStart_toEndOf="@+id/edtSaglikKalpA" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="mmHg"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edtSaglikKucukT"
+            app:layout_constraintStart_toEndOf="@+id/edtSaglikKucukT" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Büyük Tansiyon:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Küçük Tansiyon:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaglikBuyukT" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Kalp Atışınız:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <Button
+            android:id="@+id/btnSaglikKaydet"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/ozel2"
+            android:text="Kaydet"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConsSaglik2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:text="İLAÇ KAYDET"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtSaglikIlacAdi"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel5"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <EditText
+            android:id="@+id/edtSaglikBaslangicT"
+            android:layout_width="165dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel5"
+            android:ems="10"
+            android:hint="orn :07/08/2021"
+            android:inputType="date"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <Spinner
+            android:id="@+id/spnrSaglikKullanim"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel5"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <Spinner
+            android:id="@+id/spnrSaglikKullanimAralik"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/ozel5"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <Button
+            android:id="@+id/btnSaglikIlacG"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="45dp"
+
+            android:backgroundTint="@color/ozel5"
+            android:text="İLAÇLARI GÖRÜNTÜLE"
+            android:textColor="@color/ozel2"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_agenda"
+            app:layout_constraintStart_toStartOf="@+id/edtSaglikBaslangicT"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaglikBaslangicT" />
+
+        <Button
+            android:id="@+id/btnSaglikIlacK"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/ozel5"
+            android:text="İLAÇ KAYDET"
+            android:textColor="@color/ozel2"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_add"
+            app:layout_constraintEnd_toEndOf="@+id/spnrSaglikKullanimAralik"
+            app:layout_constraintTop_toTopOf="@+id/btnSaglikIlacG" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="İlacın Adı:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Başlangıç Tarihi:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaglikIlacAdi" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="Kullanımı:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/edtSaglikIlacAdi"
+            app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="Kullanım Aralığı:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/edtSaglikBaslangicT"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kKayitCons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Kullanici.KullaniciKayitFragment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="25dp"
+        android:text="Ad :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Telefon :"
+        app:layout_constraintStart_toEndOf="@+id/kKayitTxtMail"
+        app:layout_constraintTop_toBottomOf="@+id/kKayitTxtSoyad" />
+
+    <EditText
+        android:id="@+id/kKayitTxtTelefon"
+        android:layout_width="158dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="5dp"
+        android:maxLength="11"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Soyad :"
+        app:layout_constraintStart_toEndOf="@+id/kKayitTxtAd"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Mail Adres:"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/kKayitTxtAd" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Şifre :"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/kKayitTxtMail" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Şifre Tekrar :"
+        app:layout_constraintStart_toEndOf="@+id/kKayitTxtSifre"
+        app:layout_constraintTop_toBottomOf="@+id/kKayitTxtTelefon" />
+
+    <EditText
+        android:id="@+id/kKayitTxtMail"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/kKayitTxtAd"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/kKayitTxtSoyad"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/kKayitTxtSifre"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/kKayitTxtSifreTekrar"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/kKayitBtnGonder"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="KAYDOL"
+        app:icon="@drawable/kullanici"
+        app:layout_constraintStart_toEndOf="@+id/kKayitTxtSifre"
+        app:layout_constraintTop_toBottomOf="@+id/kKayitTxtSifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

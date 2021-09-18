@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ozel4"
+    tools:context=".ProfilDuzenleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/duzenleCons1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgPduzenle"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btnPduzenleImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Yeni seç..."
+            android:backgroundTint="@color/ozel3"
+            app:icon="@android:drawable/ic_menu_set_as"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPduzenle"
+            app:layout_constraintStart_toEndOf="@+id/imgPduzenle"
+            app:layout_constraintTop_toTopOf="@+id/imgPduzenle"
+            app:layout_constraintVertical_bias="0.110000014" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Profil düzenle"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnPduzenleImg"
+            app:layout_constraintStart_toStartOf="@+id/btnPduzenleImg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edtPduzenleAd"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <EditText
+        android:id="@+id/edtPduzenleSoyad"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <EditText
+        android:id="@+id/edtPduzenleMail"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <EditText
+        android:id="@+id/edtPduzenleSifre"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <EditText
+        android:id="@+id/edtPduzenleSifreTekrar"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <EditText
+        android:id="@+id/edtPduzenleTelefon"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:maxLength="11"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleSifre"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <EditText
+        android:id="@+id/edtPduzenleDogumYil"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:maxLength="4"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <Spinner
+        android:id="@+id/spnrPduzenleCinsiyet"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <Button
+        android:id="@+id/btnPduzenleKaydet"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ozel3"
+        android:text="KAYDET"
+        app:icon="@android:drawable/stat_notify_sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrPduzenleCinsiyet"
+        app:rippleColor="#EFE8E8" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Ad"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duzenleCons1" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Soyad"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/edtPduzenleAd"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Mail"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleAd"
+        app:layout_constraintTop_toBottomOf="@+id/edtPduzenleAd" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Şifre"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleMail"
+        app:layout_constraintTop_toBottomOf="@+id/edtPduzenleMail" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifre Tekrar"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleSoyad"
+        app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Telefon"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleSifre"
+        app:layout_constraintTop_toBottomOf="@+id/edtPduzenleSifre" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doğum Yılı(örn. 1997)"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleSifreTekrar"
+        app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Cinsiyet"
+        android:textColor="#F3ECEC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edtPduzenleTelefon"
+        app:layout_constraintTop_toBottomOf="@+id/edtPduzenleTelefon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

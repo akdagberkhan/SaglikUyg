@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DoktorPanelFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/ozel7"
+        android:id="@+id/panelDrCons1">
+
+        <ImageView
+            android:id="@+id/drPanelImg"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDrPanelFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="DEĞİŞTİR"
+            android:backgroundTint="@color/ozel3"
+            app:icon="@android:drawable/ic_popup_sync"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drPanelImg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panelDrCons2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panelDrCons1"
+        android:layout_marginTop="4dp"
+        android:background="@color/ozel4">
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Telefon"
+            android:textColor="#EDE9E9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Şifre"
+            android:textColor="#EDE9E9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/edtDrPanelTelefon"
+            app:layout_constraintTop_toBottomOf="@+id/edtDrPanelTelefon" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kategori"
+            android:textColor="#EDE9E9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/edtDrPanelSifre"
+            app:layout_constraintTop_toBottomOf="@+id/edtDrPanelSifre" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Şifre Tekrar"
+            android:textColor="#EDE9E9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/spnrDrPanelCinsiyet"
+            app:layout_constraintTop_toBottomOf="@+id/spnrDrPanelCinsiyet" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:text="Cinsiyet"
+            android:textColor="#EDE9E9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView51"
+            app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+        <EditText
+            android:id="@+id/edtDrPanelTelefon"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="@+id/textView51"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <EditText
+            android:id="@+id/edtDrPanelSifre"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/textView52"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <EditText
+            android:id="@+id/edtDrPanelSifreTekrar"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/textView53"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <Spinner
+            android:id="@+id/spnrDrPanelCinsiyet"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <Spinner
+            android:id="@+id/spnrDrPanelKategori"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView54"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <Button
+            android:id="@+id/btnDrPanelKaydet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="KAYDET"
+            android:backgroundTint="@color/ozel3"
+            app:icon="@android:drawable/ic_menu_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnrDrPanelKategori" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

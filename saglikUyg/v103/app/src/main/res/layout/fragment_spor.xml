@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SporFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sporCons1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/ozel2">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/ic_yakilan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSporAdimS" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Yakılan Kalori:"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSporYakilanK"
+            app:layout_constraintEnd_toStartOf="@+id/txtSporYakilanK"
+            app:layout_constraintTop_toTopOf="@+id/txtSporYakilanK" />
+
+        <TextView
+            android:id="@+id/txtSporYakilanK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="27dp"
+            android:text="ADIM SAYISI"
+            android:textColor="#201F1F"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtSporAdimS"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <Button
+            android:id="@+id/btnSporHesapla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/ozel4"
+            android:text="HESAPLA"
+            app:layout_constraintEnd_toEndOf="@+id/edtSporAdimS"
+            app:layout_constraintTop_toBottomOf="@+id/edtSporAdimS" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/sporCons1"
+        android:background="@color/ozel4"
+        android:id="@+id/sporImg1"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sporImg1">
+
+        <Button
+            android:id="@+id/btnSporKaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/ozel3"
+            android:text="KAYDET"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSporHaraketAdi" />
+
+        <EditText
+            android:id="@+id/edtSporHaraketAdi"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/textView32"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <EditText
+            android:id="@+id/edtSporTahminiKalori"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/edtSporHaraketAdi"
+            app:layout_constraintTop_toTopOf="@+id/edtSporHaraketAdi" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Haraket Adı:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T. Yakılan Kalori:"
+            app:layout_constraintStart_toStartOf="@+id/edtSporTahminiKalori"
+            app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcycSpor"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSporKaydet" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

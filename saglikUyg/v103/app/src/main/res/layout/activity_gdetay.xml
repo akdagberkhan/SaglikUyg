@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GdetayActivity">
+
+    <ImageView
+        android:id="@+id/imgDetay"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtDetayBaslik"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetay" />
+
+    <TextView
+        android:id="@+id/txtDetayAciklama"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetayBaslik"
+        app:layout_constraintStart_toStartOf="@+id/txtDetayBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetayBaslik" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcycDetayYorumlar"
+        android:layout_width="365dp"
+        android:background="@color/ozel2"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetayBaslik"
+        app:layout_constraintStart_toStartOf="@+id/txtDetayBaslik" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtDetayYorum"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnDetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/ozel3"
+            android:layout_weight="1"
+            android:text="Gönder" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

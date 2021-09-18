@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dKayitConsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".Fragments.Doktor.DoktorKayitFragment">
+
+
+    <EditText
+        android:id="@+id/dKayitTxtAd"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/dKayitTxtSoyad"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/dKayitTxtMail"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword|textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/dKayitTxtSifre"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/dKayitTxtSifreTekrar"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/dKayitBtnGonder"
+        android:layout_width="189dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+
+
+        android:text="Talep Gönder"
+        app:icon="@drawable/doktor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dKayitTxtSifreTekrar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:text="Ad :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="Soyad :"
+        app:layout_constraintStart_toStartOf="@+id/dKayitTxtSoyad"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Mail Adres:"
+        app:layout_constraintStart_toStartOf="@+id/dKayitTxtAd"
+        app:layout_constraintTop_toBottomOf="@+id/dKayitTxtAd" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Şifre :"
+        app:layout_constraintStart_toStartOf="@+id/dKayitTxtMail"
+        app:layout_constraintTop_toBottomOf="@+id/dKayitTxtMail" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:text="Şifre Tekrar :"
+        app:layout_constraintStart_toStartOf="@+id/dKayitTxtSoyad"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/dKayitImgBilgi"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="@+id/dKayitTxtMail"
+        app:layout_constraintStart_toEndOf="@+id/dKayitTxtMail"
+        app:layout_constraintTop_toTopOf="@+id/dKayitTxtMail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

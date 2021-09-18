@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gonderilerCons1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gonderilerPaylasimFoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gonderilerPaylasimBaslik"
+            android:layout_width="233dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:text="DENEME BAŞLIK"
+            android:textColor="#1E1D1D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/gonderilerPaylasimFoto"
+            app:layout_constraintTop_toTopOf="@+id/gonderilerPaylasimFoto" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ad Soyad:"
+            app:layout_constraintStart_toStartOf="@+id/gonderilerPaylasimBaslik"
+            app:layout_constraintTop_toBottomOf="@+id/gonderilerPaylasimBaslik" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Cinsiyet / Yaş :"
+            app:layout_constraintStart_toStartOf="@+id/gonderilerPaylasimBaslik"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Kategori :"
+            app:layout_constraintStart_toStartOf="@+id/gonderilerPaylasimBaslik"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/gonderilerPaylasimAdSoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="deneme xxxx"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/gonderilerPaylasimCinsiyetYas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Erkek / 21"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="@+id/gonderilerPaylasimAdSoyad"
+            app:layout_constraintStart_toStartOf="@+id/gonderilerPaylasimAdSoyad"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/gonderilerPaylasimKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Üroloji"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="@+id/gonderilerPaylasimCinsiyetYas"
+            app:layout_constraintStart_toStartOf="@+id/gonderilerPaylasimCinsiyetYas"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/gonderilerCons1"
+        android:id="@+id/gonderilerRelative1"
+        >
+
+        <ImageView
+            android:id="@+id/gonderiKullaniciFoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/gonderilerPaylasimKulAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Kullanıcı Mail"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gonderiKullaniciFoto"/>
+
+        <ImageView
+            android:id="@+id/gonderilerYorumBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/yorumlar" />
+        <TextView
+            android:id="@+id/gonderilerYorumSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_toLeftOf="@+id/gonderilerYorumBtn"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/gonderilerRelative1"
+        />
+</RelativeLayout>
