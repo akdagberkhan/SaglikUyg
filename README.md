@@ -5,7 +5,7 @@ sağlıyor ve doktor yorumu ve tavsiyesi alabiliyor. Aynı zaman da ilaç, spor 
 
 ## Kullanılan Kütüphaneler
 
- -implementation 'com.android.volley:volley:1.2.0'
+ ' implementation 'com.android.volley:volley:1.2.0' '
  -implementation 'com.squareup.picasso:picasso:2.71828'
 
 Picasso kütüphanesini sunucumdan fotoğrafları almak ve belirlediğim nesnelerimde göstermek için kullandım.
