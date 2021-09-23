@@ -24,8 +24,8 @@ RecyclerView kullandım.
 
 ## Bazı Görüntüler
 
-![Anasayfa](https://www.hizliresim.com/5g8nkk8)
+![Anasayfa](https://i.www.hizliresim.com/5g8nkk8.jpg)
 
-![Gönderi Paylaş](https://www.hizliresim.com/8nkmfxf)
+![Gönderi Paylaş](https://i.www.hizliresim.com/8nkmfxf.jpg)
 
 ![Gönderi Detay ve Yorumlar](https://i.hizliresim.com/c8sdzol.JPG)
