@@ -23,7 +23,7 @@ Anasayfa tasarımım için drawer menu kullandım bunun yanında bazı sayfalar 
 RecyclerView kullandım.
 
 ## Bazı Görüntüler
-
+-Anasayfa
 ![Anasayfa](https://i.www.hizliresim.com/5g8nkk8.jpg)
 
 ![Gönderi Paylaş](https://i.www.hizliresim.com/8nkmfxf.jpg)
