@@ -28,4 +28,4 @@ RecyclerView kullandım.
 
 ![Gönderi Paylaş](https://www.hizliresim.com/8nkmfxf)
 
-![Gönderi Detay ve Yorumlar](https://www.hizliresim.com/c8sdzol)
+![Gönderi Detay ve Yorumlar](https://i.hizliresim.com/c8sdzol.JPG)
